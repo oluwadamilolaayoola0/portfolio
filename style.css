@@ -32,7 +32,15 @@ a {
 }
 a:hover { opacity: 0.75; }
 
-img { max-width: 100%; height: auto; }
+img {
+  width: 180px;                  /* Sets a moderate box size */
+  height: 180px;                 /* Keeps it square */
+  object-fit: cover;             /* Prevents stretching/distortion */
+  border-radius: 16px;           /* Gives smooth, rounded corners */
+  border: 4px solid #58a6ff;     /* Bold blue outline matching your theme */
+  display: block;
+  margin: 0 auto 20px;          /* Centers the image horizontally */
+}
 
 .container {
   width: 100%;
